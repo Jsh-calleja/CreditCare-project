@@ -76,3 +76,44 @@
 - **Hosting**: Render/Heroku (backend + DB), Vercel/Netlify (frontend).
 
 **Project Structure**:
+creditcare/ backend/ app/ init.py models.py routes/ auth.py cards.py utils/ security.py migrations/ tests/ wsgi.py frontend/ docs/ PRD.md README.md LICENSE .gitignore .env.example
+
+
+---
+
+## 7. API Endpoints
+- `POST /api/auth/register` → register user.
+- `POST /api/auth/login` → login, get JWT.
+- `POST /api/cards` → add card.
+- `GET /api/cards` → list cards.
+- `POST /api/cards/:id/payments` → record payment.
+- `GET /api/cards/:id/history` → payment history.
+- `POST /api/simulate` → simulate payoff.
+- `GET /api/reminders` → list reminders.
+- `POST /api/export/:cardId` → export CSV.
+
+---
+
+## 8. Roadmap
+**Phase 1**: Planning + repo setup (README, LICENSE, .gitignore, .env.example).  
+**Phase 2**: Backend setup (Flask app, models, auth, migrations).  
+**Phase 3**: Frontend setup (React app, dashboard, forms).  
+**Phase 4**: Testing + CI/CD (GitHub Actions, coverage).  
+**Phase 5**: Deployment (Render/Vercel).  
+**Phase 6**: Documentation + demo video.
+
+---
+
+## 9. Risks & Mitigation
+- **Sensitive data** → mitigate by not storing PAN/CVV.  
+- **Incorrect financial calculations** → mitigate with documented formulas + unit tests.  
+- **Notification spam** → mitigate with user consent + configurable frequency.  
+- **Secrets leakage** → mitigate with `.gitignore`, GitHub Secrets, hosting provider env vars.
+
+---
+
+## 10. Success Metrics
+- MVP deployed and accessible.
+- 5 user flows demonstrable in video.
+- >70% test coverage in financial logic.
+- README with architecture and deployment guide.
