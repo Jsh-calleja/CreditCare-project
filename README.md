@@ -40,22 +40,22 @@ The application allows users to register cards (metadata only), plan and manage 
 git clone https://github.com/your-username/creditcare.git
 cd creditcare
 
-Backend
+### Backend
 cd backend
 cp .env.example .env
 pip install -r requirements.txt
 flask db upgrade
 flask run
 
-Frontend
+###Frontend
 cd frontend
 cp .env.example .env
 npm install
 npm run dev
 
-Environment Variables
-Configure a .env file in each service (backend/frontend).
-Example in backend/.env.example:
+###Environment Variables
+"""Configure a .env file in each service (backend/frontend).
+Example in backend/.env.example:"""
 
 DATABASE_URL=postgres://user:password@localhost:5432/creditcare_dev
 JWT_SECRET=replace_with_strong_secret
