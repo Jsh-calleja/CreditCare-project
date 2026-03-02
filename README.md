@@ -65,8 +65,3 @@ SMTP_USER=your_user
 SMTP_PASS=your_password
 FRONTEND_URL=http://localhost:3000
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 0bf4863286f4305f6ca19077dc81b9e1de8ffdce
